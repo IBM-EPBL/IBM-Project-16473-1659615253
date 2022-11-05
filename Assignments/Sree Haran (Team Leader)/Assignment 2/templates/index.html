@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    
+{% endblock %}
+
+{% block body %}
+<header class="header">
+    <a href="#" class="logo">Job Reccomonder</a>
+    <nav class="nav-items">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="{{ url_for('login') }}" id="login" name = "login">Login</a>
+      <a href="{{ url_for('signup') }}" id="signup" name = "signup">Signup</a>
+    </nav>
+</header>
+
+<main>
+    <div class="intro">
+      <h1>Job Reccomender</h1>
+      <p>We are here to grab your dream job...</p>
+    </div>
+    
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About us</h2>
+        <p>We are here to grab your dream job opportunity. With your dream salary Package.</p>
+      
+</main>
+
+<footer class="footer">
+    <div class="copy">&copy; 2022 job reccomender</div>
+    <div class="bottom-links">
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+</footer>
+{% endblock %}
